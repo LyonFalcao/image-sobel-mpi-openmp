@@ -1,0 +1,9 @@
+# Executável compilado
+imageproc_mpi
+
+# Arquivos de saída gerados pelo processamento
+output/*.pgm
+
+# Arquivos temporários
+*.o
+*.out
