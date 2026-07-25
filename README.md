@@ -1,5 +1,13 @@
 # Processamento de Imagens com Sobel utilizando MPI e OpenMP
 
+## Autores
+
+Projeto desenvolvido como parte de estudos em Introdução ao Processamento Paralelo e Pistribuído
+
+```
+Lyon Falcão
+```
+
 ## Sobre o projeto
 
 Este projeto implementa o processamento de imagens utilizando o operador de Sobel para detecção de bordas, combinando técnicas de paralelismo distribuído e paralelismo em memória compartilhada.
@@ -185,11 +193,3 @@ Imagem salva em output/sobel_mpi.pgm
 * Xivoco (ambiente de execução distribuída)
 
 ---
-
-## Autores
-
-Projeto desenvolvido como parte de estudos em Introdução ao Processamento Paralelo e Pistribuído
-
-```
-Lyon Falcão
-```
