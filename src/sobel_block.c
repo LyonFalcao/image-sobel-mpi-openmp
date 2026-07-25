@@ -12,9 +12,7 @@ static int getPixel(
     int height
 )
 {
-    /*
-     * Considera zero padding.
-     */
+
     if (x < 0 || x >= width ||
         y < 0 || y >= height)
     {
@@ -34,16 +32,7 @@ void applySobelBlock(
 )
 {
 
-    /*
-     * O input possui duas linhas extras:
-     *
-     * linha 0        -> halo superior
-     * linhas 1..H    -> dados reais
-     * linha H+1      -> halo inferior
-     *
-     * Por isso usamos y+1.
-     */
-
+   
     #pragma omp parallel for
     for (int y = 0; y < height; y++)
     {
