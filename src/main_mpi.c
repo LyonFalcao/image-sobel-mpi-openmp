@@ -22,6 +22,7 @@ int main(int argc, char **argv)
 
     unsigned char *pixels = NULL;
 
+    Image *img = NULL;
 
     if (rank == 0)
     {
@@ -31,8 +32,8 @@ int main(int argc, char **argv)
   			  return 1;
 		}
 
-		loadPGM(argv[1], &img);
-		
+		img = loadPGM(argv[1]);		
+
         if (img == NULL)
         {
             printf("Erro ao carregar imagem\n");
