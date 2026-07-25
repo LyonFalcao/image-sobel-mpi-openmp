@@ -25,8 +25,14 @@ int main(int argc, char **argv)
 
     if (rank == 0)
     {
-        Image *img = loadPGM("images/entrada.pgm");
+		if (argc < 2)
+		{
+  			  printf("Uso: %s <imagem.pgm>\n", argv[0]);
+  			  return 1;
+		}
 
+		loadPGM(argv[1], &img);
+		
         if (img == NULL)
         {
             printf("Erro ao carregar imagem\n");
