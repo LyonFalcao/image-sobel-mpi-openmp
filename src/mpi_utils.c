@@ -12,9 +12,6 @@ void exchangeHalos(
     MPI_Status status;
 
 
-    // Envia a última linha para o processo abaixo
-    // e recebe a linha acima do processo anterior
-
     if (rank > 0)
     {
         MPI_Sendrecv(
@@ -36,8 +33,6 @@ void exchangeHalos(
     }
 
 
-    // Envia a última linha para o processo abaixo
-    // e recebe a linha abaixo
 
     if (rank < size - 1)
     {
